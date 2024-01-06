@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { v4 as uuid } from "uuid";
-import Footer from '../Footer'
+import Footer from "../Footer";
 
 import {
   FormPageContainer,
@@ -11,6 +11,7 @@ import {
   CustomTextArea,
   AddButton,
   HLine,
+  ErrorText
 } from "./StyledComponents";
 
 const initialValues = {
@@ -95,9 +96,11 @@ class FormSection extends Component {
             placeholder="Enter Project Description"
           />
           <AddButton type="submit">Add</AddButton>
-          {errorMessage !== "" && <p>*{errorMessage}</p>}
+          {errorMessage !== "" && (
+            <ErrorText style={{ color: "red"}}>*{errorMessage}</ErrorText>
+          )}
         </FormContainer>
-        <Footer/>
+        <Footer />
       </FormPageContainer>
     );
   }

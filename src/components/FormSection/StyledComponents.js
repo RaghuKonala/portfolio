@@ -88,3 +88,11 @@ export const AddButton = styled.button`
   outline: none;
   cursor: pointer;
 `;
+
+export const ErrorText = styled.p`
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+`;

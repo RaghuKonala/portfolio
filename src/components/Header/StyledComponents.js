@@ -7,7 +7,7 @@ export const NavContainer = styled.nav`
   height: 12vh;
   width: 100vw;
   position: fixed;
-  background-color: #f9faff;
+  z-index: 3;
 `;
 
 export const NavContent = styled.div`
@@ -24,6 +24,7 @@ export const NavTitle = styled.h1`
   font-size: 18px;
   font-weight: 600;
   font-family: "Comfortaa";
+  background-color: #f9faff;
   @media screen and (min-width: 768px) {
     font-size: 22px;
   }

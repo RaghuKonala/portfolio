@@ -81,19 +81,26 @@ export const ImageSection = styled.div`
   height: 100%;
   width: 50vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-export const ImageContent = styled.img`
-  height: 350px;
-  max-width: 550px;
-  width: 85%;
-  border-radius: 15px;
+export const ImageContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: relative;
+`;
+
+export const ImageElement = styled.img`
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  border-radius: 15px;
+  margin-top: 12vh;
 `;
